@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Blogs
+{% endblock %}
+
+{%block page_title %}
+All Posts
+{% endblock %}
+{% block content %}
+    {% for object in object_list %}
+        <h1>
+            <a href="/blogs/{{ object.slug }}/">{{ object.title }}</a>
+
+        </h1>
+    {% endfor %}
+    
+
+{% endblock %}

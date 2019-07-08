@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+BlogDetils
+{% endblock %}
+
+{%block page_title %}
+Blogs
+{% endblock %}
+{% block content %}
+<h3>
+ {{ object.title }}
+</h3>
+    <p>
+    {{ object.content }}
+</p>
+    <img src="{{ object.image_url }}">
+{% endblock %}
+
